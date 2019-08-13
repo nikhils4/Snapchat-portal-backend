@@ -5,7 +5,6 @@ const helpers = require('../model/helpers.js');
 
 router.post('/signup', (request, response) => {
   if (!helpers.emailValidate(request.body.email)) {
-    // console.log("There was error validating your email id");
     response.json({
       status: 400,
       message: 'There was error validating your email id',
@@ -50,7 +49,6 @@ router.post('/login', (request, response) => {
         message: 'There was error fetching the details',
       });
     } else if (data == null || data === undefined) {
-      // console.log("No such user exist try signing up first")
       response.json({
         status: 400,
         message: 'No such user exist try signing up first',
