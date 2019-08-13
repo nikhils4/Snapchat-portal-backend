@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+const openRoutes = require('./routes/openRoutes.js');
 const authRoutes = require('./routes/auth.js');
 const middleware = require('./model/middleware.js');
 const protectedRoutes = require('./routes/protected.js');
@@ -17,6 +18,7 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+app.use('/', openRoutes);
 app.use('/auth', authRoutes);
 
 app.use(middleware.session);
