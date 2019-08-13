@@ -1,9 +1,9 @@
-# Snapchat backend
+# Snapchat-portal-backend
 Snapchat portal backend to be used to upload filters by the users.
 
 <br>
 
-#### Quadro backend
+#### Snapchat portal backend
 
 [![view docs](https://img.shields.io/badge/docs-view%20API%20documentation-orange.svg)](https://documenter.getpostman.com/view/6334076/SVYwJFwT?version=latest)
 
